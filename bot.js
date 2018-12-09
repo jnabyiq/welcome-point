@@ -39,7 +39,7 @@ var channel = "521374016036929536";//ايدي الروم jàkeY
     
     client.guilds.get(server).channels.get(channel).send('Welcome to **point** . . ')
    
-40000});
+20000});
  
  
  
