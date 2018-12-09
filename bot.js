@@ -33,13 +33,12 @@ client.on('ready', () => {
 
 
 
- client.on("guildMemberAdd", member => {
-  var server = "518756105166520320"; // ايدي السررفر JákeY
-var channel = "521374016036929536";//ايدي الروم jàkeY
-    
-    client.guilds.get(server).channels.get(channel).send('Welcome to **point** . . ')
-   
-20000});
+client.on('guildMemberAdd',async member => {
+  if(member.guild.id !== '518756105166520320') return;
+  setTimeout(function(){
+  member.guild.channels.find(r => r.id === '521374016036929536').send('Welcome To **Point** .');
+},5000);
+});
  
  
  
