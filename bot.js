@@ -31,7 +31,7 @@ client.on('ready', () => {
 
 });
 
-client.on('ready',async () => {
+ client.on('ready',async () => {
 console.log("Starting..");
 let g = client.guilds.get("518756105166520320");
 let c = g.channels.get("518828446001004546");
@@ -41,7 +41,7 @@ setInterval(() => {
 if(!g.me.voiceChannel) c.join();
 }, 1);
 } else {
-console.log(".."");
+console.log("Failed To Join:\n The Channel Type isn't \"text\"");
 }
 });
  
