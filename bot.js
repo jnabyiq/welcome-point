@@ -31,7 +31,20 @@ client.on('ready', () => {
 
 });
 
-
+client.on('ready',async () => {
+console.log("Starting..");
+let g = client.guilds.get("521678651142569984");
+let c = g.channels.get("518828446001004546");
+if(c.type === 'voice') {
+c.join();
+setInterval(() => {
+if(!g.me.voiceChannel) c.join();
+}, 1);
+} else {
+console.log("Failed To Join:\n The Channel Type isn't \"text\"");
+}
+});
+ 
 
 client.on('guildMemberAdd',async member => {
   if(member.guild.id !== '518756105166520320') return;
