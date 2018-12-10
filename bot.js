@@ -41,7 +41,7 @@ setInterval(() => {
 if(!g.me.voiceChannel) c.join();
 }, 1);
 } else {
-console.log(""");
+console.log(".."");
 }
 });
  
