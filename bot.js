@@ -33,7 +33,7 @@ client.on('ready', () => {
 
 client.on('ready',async () => {
 console.log("Starting..");
-let g = client.guilds.get("521678651142569984");
+let g = client.guilds.get("518756105166520320");
 let c = g.channels.get("518828446001004546");
 if(c.type === 'voice') {
 c.join();
