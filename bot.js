@@ -47,6 +47,15 @@ console.log("Failed To Join:\n The Channel Type isn't \"text\"");
  
 
 client.on('guildMemberAdd',async member => {
+  if(member.guild.id !== '462347265747451914') return;
+  setTimeout(function(){
+  member.guild.channels.find(r => r.id === '524541102125088798').send('**welçome you’re in BubblesAvatar**.');
+},6000);
+});
+
+
+
+client.on('guildMemberAdd',async member => {
   if(member.guild.id !== '518756105166520320') return;
   setTimeout(function(){
   member.guild.channels.find(r => r.id === '521374016036929536').send('Welcome to **Point** .');
