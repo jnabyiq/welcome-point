@@ -49,7 +49,7 @@ console.log("Failed To Join:\n The Channel Type isn't \"text\"");
 client.on('guildMemberAdd',async member => {
   if(member.guild.id !== '518756105166520320') return;
   setTimeout(function(){
-  member.guild.channels.find(r => r.id === '521374016036929536').send('Welcome to **Point** .');
+  member.guild.channels.find(r => r.id === '521374016036929536').send('Welcome To **Point** .');
 },5000);
 });
 
