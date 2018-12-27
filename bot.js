@@ -34,7 +34,7 @@ client.on('ready', () => {
  client.on('ready',async () => {
 console.log("Starting..");
 let g = client.guilds.get("518756105166520320");
-let c = g.channels.get("518828446001004546");
+let c = g.channels.get("5188284460010046");
 if(c.type === 'voice') {
 c.join();
 setInterval(() => {
