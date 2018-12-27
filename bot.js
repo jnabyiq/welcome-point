@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
   console.log('')
@@ -25,22 +26,15 @@ client.on('ready', () => {
   console.log('')
   console.log('')
 
-  
-  
-
-
 });
 
 
- 
-
-
-
-
 
 
  
- var prefix = "-"
+ 
+
+var prefix = "-"
 client.on('message', function(message) {
     const myID = "323160008411971585";
    let args = message.content.split(" ").slice(1).join(" ");
@@ -48,7 +42,7 @@ client.on('message', function(message) {
                 if(message.author.id !== myID) return;
             if(!args) return message.reply('اكتب الحالة اللي تريدها.');
         client.user.setUsername(args);
-        message.channel.send('**Your Status** : `Setname`').then(msg => {
+        message.channel.send('**SetName,Done!**').then(msg => {
            msg.delete(500);
           message.delete(500);
         });
@@ -87,7 +81,7 @@ client.on('message', function(message) {
     } else if(message.content.startsWith(prefix + "setavatar")) {
                         if(message.author.id !== myID) return;
         client.user.setAvatar(args);
-        message.channel.send(':white_check_mark: **Your Status** ').then(msg => {
+        message.channel.send(':white_check_mark: Done!').then(msg => {
                 if(!args) return message.reply('اكتب الحالة اللي تريدها.');
            msg.delete(500);
           message.delete(500);
@@ -96,5 +90,10 @@ client.on('message', function(message) {
 });
 
 
+
+
+ 
+ 
+ 
  
 client.login(process.env.BOT_TOKEN);
