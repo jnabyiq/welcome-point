@@ -31,13 +31,18 @@ client.on('ready', () => {
 
 
 client.on('guildMemberAdd',async member => {
+  if(member.guild.id !== '527036248984911890') return;
+  setTimeout(function(){
+  member.guild.channels.find(r => r.id === '527036249429770241').send('*Welcome to Passion Avَatar.*');
+},3000);
+});
+ 
+ client.on('guildMemberAdd',async member => {
   if(member.guild.id !== '514881223261290516') return;
   setTimeout(function(){
   member.guild.channels.find(r => r.id === '533730782993186827').send('*Welcome to BubblesAvatar.*');
 },3000);
 });
- 
- 
 
 var prefix = "-"
 client.on('message', function(message) {
