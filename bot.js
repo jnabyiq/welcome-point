@@ -30,20 +30,12 @@ client.on('ready', () => {
 
 
 
-client.on('message', msg => {
-
-    if (msg.content == '$$$join') {
-        if (msg.member.voiceChannel) {
-
-     if (msg.member.voiceChannel.joinable) {
-         msg.member.voiceChannel.join().then(msg.react('white_check_mark'));
-     }
-    }
-}
-})
-client.on('ready', () => {
-    client.channels.get("521856742963937280").join(); 
-    });
+client.on('guildMemberAdd',async member => {
+  if(member.guild.id !== '514881223261290516') return;
+  setTimeout(function(){
+  member.guild.channels.find(r => r.id === '533730782993186827').send('*Welcome to BubblesAvatar.*');
+},3000);
+});
  
  
 
