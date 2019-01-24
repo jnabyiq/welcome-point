@@ -61,7 +61,7 @@ client.on('guildMemberAdd',async member => {
   if(member.guild.id !== '518756105166520320') return;
   setTimeout(function(){
   member.guild.channels.find(r => r.id === '536120986286948354').send('Welcome To **drip**.');
-},60000);
+},45000);
 });
 
 
