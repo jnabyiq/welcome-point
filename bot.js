@@ -39,28 +39,13 @@ client.on('message', msg => {
     }
 }
 })
-client.on('ready', () => {
-    client.channels.get("536113868884148234").join(); 
-    });
 
-client.on('guildMemberAdd',async member => {
-  if(member.guild.id !== '527036248984911890') return;
-  setTimeout(function(){
-  member.guild.channels.find(r => r.id === '534805076691386389').send('*Welcome to Passion Avَatar.*');
-},3000);
-});
- 
- client.on('guildMemberAdd',async member => {
-  if(member.guild.id !== '514881223261290516') return;
-  setTimeout(function(){
-  member.guild.channels.find(r => r.id === '533730782993186827').send('*Welcome to BubblesAvatar.*');
-},30000);
-});
+
 
  client.on('guildMemberAdd',async member => {
   if(member.guild.id !== '518756105166520320') return;
   setTimeout(function(){
-  member.guild.channels.find(r => r.id === '536120986286948354').send('Welcome To **drip**.');
+  member.guild.channels.find(r => r.id === '536120986286948354').send('Welcome To **drip.**');
 },45000);
 });
 
