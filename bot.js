@@ -28,26 +28,7 @@ client.on('ready', () => {
 
 });
 
-client.on('message', msg => {
 
-    if (msg.content == '$$$join') {
-        if (msg.member.voiceChannel) {
-
-     if (msg.member.voiceChannel.joinable) {
-         msg.member.voiceChannel.join().then(msg.react('white_check_mark'));
-     }
-    }
-}
-})
-
-
-
- client.on('guildMemberAdd',async member => {
-  if(member.guild.id !== '518756105166520320') return;
-  setTimeout(function(){
-  member.guild.channels.find(r => r.id === '536120986286948354').send('Welcome To **drip.**');
-},45000);
-});
 
 
 var prefix = "-"
